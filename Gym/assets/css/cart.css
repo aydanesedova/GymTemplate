@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+header .belive {
+  width: 60%;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  color: #222;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 82px;
+}
+header .phone {
+  display: flex;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+}
+header .phone p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  color: #222;
+}
+header .phone div {
+  width: 24%;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6214b;
+}
+header .phone div i {
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+header nav .navList {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .navList .navUl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header nav .navList .navUl li a {
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  color: #222;
+  transition: 0.6s ease;
+}
+header nav .navList .navUl li a:hover {
+  color: #f6214b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+header .belive {
+  width: 60%;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  color: #222;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 82px;
+}
+header .phone {
+  display: flex;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+}
+header .phone p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  color: #222;
+}
+header .phone div {
+  width: 24%;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6214b;
+}
+header .phone div i {
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+header nav .navList {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .navList .navUl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header nav .navList .navUl li a {
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
+  color: #222;
+  transition: 0.6s ease;
+}
+header nav .navList .navUl li a:hover {
+  color: #f6214b;
+}
+
+#allProducts {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#allProducts #cartProducts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  height: 700px;
+}
+#allProducts #cartProducts .box img {
+  width: 97%;
+  border-radius: 10px;
+}
+#allProducts #cartProducts .box h2 {
+  font-size: 20px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #222;
+}
+#allProducts #cartProducts .box button {
+  border: none;
+  background-color: #f6214b;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 42px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 40%;
+  transition: 0.5s ease;
+}
+#allProducts #cartProducts .box button:hover {
+  background-color: transparent;
+  border: 1px solid #f6214b;
+  color: #f6214b;
+}
+
+@media screen and (max-width: 800px) {
+  #allProducts #cartProducts {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+}

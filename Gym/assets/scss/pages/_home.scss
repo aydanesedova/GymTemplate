@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+
+    .belive {
+        width: 60%;
+        height: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 500;
+        font-family: Poppins, sans-serif;
+        color: #222;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 82px;
+
+    }
+
+    .phone {
+        display: flex;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: end;
+
+        p {
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 500;
+            font-family: Poppins, sans-serif;
+            color: #222;
+        }
+
+        div {
+            width: 24%;
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f6214b;
+
+            i {
+                font-size: 18px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    nav {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+
+
+        .navList {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .navUl {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                position: relative;
+
+                li {
+                    a {
+                        font-size: 12px;
+                        line-height: 23px;
+                        font-weight: 500;
+                        font-family: Poppins, sans-serif;
+                        color: #222;
+                        transition: 0.6s ease;
+
+                        &:hover {
+                            color: #f6214b;
+                        }
+                    }
+                }
+
+                .search {
+                    width: 24%;
+                    border: 1px solid #777;
+                    border-radius: 20px;
+
+                    input {
+                        border: none;
+                        border-radius: 20px;
+                        width: 87%;
+                        padding-left: 10px;
+                    }
+
+                    #btn {
+                        border: none;
+                        background-color: white;
+                        transition: 0.6s ease;
+
+                        &:hover {
+                            color: #f6214b;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        #searchPro {
+            background-color: #fff;
+            position: absolute;
+            top: 60px;
+            width: 70%;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 40%;
+            }
+
+            h1 {
+                font-size: 18px;
+                line-height: 23px;
+                font-weight: 500;
+                font-family: Poppins, sans-serif;
+                color: #222;
+            }
+        }
+    }
+}
+
+
+
+
+#realFitness {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/images/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 641px;
+    width: 100%;
+
+    .realFitnessTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 630px;
+        gap: 20px;
+
+        h1 {
+            font-size: 60px;
+            line-height: 72px;
+            font-weight: 700;
+            font-family: Poppins, sans-serif;
+            color: white;
+            width: 60%;
+            text-align: center;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 300;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width:1199px) {
+    #realFitness {
+        .realFitnessTxt {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    #realFitness {
+        .realFitnessTxt {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #realFitness {
+        .realFitnessTxt {
+            h1 {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+#careAbout {
+    min-height: 677px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .careAboutTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 344px;
+        width: 100%;
+
+        h1 {
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: 700;
+            color: #222;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 300;
+            color: #777;
+        }
+
+    }
+
+    #products {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        min-height: 300px;
+        flex-wrap: wrap;
+
+        .miniDiv {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 97%;
+                height: 200px;
+                border-radius: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: 43px;
+                font-weight: 700;
+                color: #222;
+            }
+
+            button {
+                border: none;
+                background-color: #f6214b;
+                border-radius: 20px;
+                font-size: 14px;
+                line-height: 42px;
+                font-weight: 500;
+                color: #fff;
+                width: 40%;
+                transition: 0.5s ease;
+
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid #f6214b;
+                    color: #f6214b;
+                }
+            }
+        }
+    }
+
+    .loadMoreDiv {
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        height: 60px;
+
+        #loadMore {
+            width: 10%;
+            height: 70%;
+            border: none;
+            background-color: #222;
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: 42px;
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    #careAbout {
+        #products {
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
+@media screen and (max-width:1199px) {
+    #careAbout {
+        .careAboutTxt {
+            h1 {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    #careAbout {
+        .careAboutTxt {
+            h1 {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+#topCourses {
+    min-height: 1037px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .topCoursesTxt {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: 700;
+            color: #222;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 300;
+            color: #777;
+        }
+    }
+
+    .courseAvailable {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .courseAvailableTxt {
+            position: absolute;
+            background-color: #f6214b;
+            left: 20px;
+            bottom: 70px;
+            height: 41px;
+            width: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                margin-top: 10px;
+                color: white;
+                font-size: 15px;
+                line-height: 23px;
+                // font-family: poppins;
+            }
+        }
+
+        .running {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 55px;
+            cursor: pointer;
+
+            h4 {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 700;
+                color: #222;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 700;
+                color: #f6214b;
+            }
+        }
+    }
+}
+
+#hugeTransaction {
+    width: 100%;
+    min-height: 428px;
+    background-image: url(/assets/images/callto-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hugeTransactionTxt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        gap: 10px;
+
+        h1 {
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        p {
+            width: 65%;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            border: none;
+            background-color: #f6214b;
+            border-radius: 20px;
+            min-width: 16%;
+            font-size: 14px;
+            line-height: 42px;
+            font-weight: 500;
+            color: #fff;
+            transition: 0.5s ease;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1199px) {
+    #hugeTransaction {
+        .hugeTransactionTxt {
+            h1 {
+                font-size: 25px;
+            }
+
+            button {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    #hugeTransaction {
+        .hugeTransactionTxt {
+            h1 {
+                font-size: 23px;
+            }
+
+            button {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:535px) {
+    #hugeTransaction {
+        .hugeTransactionTxt {
+            h1 {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:492px) {
+    #hugeTransaction {
+        .hugeTransactionTxt {
+            p {
+                font-size: 10px;
+            }
+
+            button {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #FFFFFF;
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .copyright {
+        p {
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 300;
+            color: #777;
+
+            span {
+                color: #f6214b;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .sosialMedia {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 45px;
+        width: 100%;
+        gap: 10px;
+
+        i {
+            background-color: #222;
+            height: 100%;
+            width: 8%;
+            font-size: 14px;
+            color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s ease;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #f6214b;
+            }
+        }
+    }
+}
